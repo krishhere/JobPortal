@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/images/logo/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <title>Conxtell - Page Not Found</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e2a38;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 30px;
+            margin: 10px;
+            background-color: #2a3a4b;
+            box-shadow: 0 1px 15px rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: red;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .error-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .menu {
+            margin: 20px 0;
+        }
+
+            .menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .menu ul li {
+                    display: inline-block;
+                    margin: 0 10px;
+                }
+
+                    .menu ul li a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        padding: 10px 15px;
+                        border: 2px solid red;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                    }
+
+                        .menu ul li a:hover {
+                            background-color: #ff6b6b;
+                            color: #1e2a38;
+                        }
+
+        .contact-text {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+            .contact-text span {
+                color: red;
+                background-color: black;
+                border-radius: 4px;
+                padding: 4px;
+                font-weight: 600;
+            }
+
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #e55a5a;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">OOPS!</div>
+        <h1>404 - Page Not Found</h1>
+        <div class="error-text">
+            The page you're looking for can't be found.
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="https://Conxtell.com">Go back to the homepage</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
