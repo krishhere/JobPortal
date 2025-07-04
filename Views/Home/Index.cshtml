@@ -6,229 +6,197 @@
     var categorySummary = JsonConvert.DeserializeObject<List<Dictionary<string,
     object>>>(ViewBag.CategorySummary.ToString());
 }
-<div class="content-page">
-    <div class="content">
-        <div class="container-fluid">
+<section class="hero-area style3">
+    <!-- Single Slider -->
+    <div class="hero-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 co-12">
+                    <div class="inner-content">
+                        <div class="hero-text">
+                            <h1 class="wow fadeInUp" data-wow-delay=".3s">Find the Most Exciting<br> Jobs to Make a
+                                Better Life
+                            </h1>
+                            <p class="wow fadeInUp" data-wow-delay=".5s">Creating a beautiful job website is not
+                                easy always. To make<br> your life easier, we are introducing Jobcamp template,<br>
+                                Leverage agile frameworks to provide a robust<br> synopsis for high level overviews.
+                            </p>
+                            <div class="button wow fadeInUp" data-wow-delay=".7s">
+                                <a href="#" class="btn">Search Jobs</a>
+                            </div>
+                        </div>
+                        <div class="job-search-wrap-two mt-50 wow fadeInUp" data-wow-delay=".9s">
+                            <div class="trending-keywords mt-30">
+                                <div class="keywords style-two">
+                                    <span class="title">Popular Keywords:</span>
+                                    <ul>
+                                        <li><a href="#">Administrative</a></li>
+                                        <li><a href="#">Android</a></li>
+                                        <li><a href="#">app</a></li>
+                                        <li><a href="#">ASP.NET</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-0 col-md-8 offset-md-2 co-12">
+                    <form class="home-search wow fadeInRight" data-wow-delay=".5s">
+                        <div class="form-group">
+                            <label class="font-weight-bold text-dark">What?</label>
+                            <div class=" form-location">
+                                <input type="text" class="form-control" placeholder="What are you looking for...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold text-dark">Where?</label>
+                            <div class="form-location">
+                                <input type="text" class="form-control" placeholder="Where...">
+                            </div>
+                        </div>
+                        <div class="form-group select-border">
+                            <label class="font-weight-bold text-dark">Choose Category?</label>
+                            <select class="form-control basic-select">
+                                <option>All categories </option>
+                                <option>Finance </option>
+                                <option>Sale/Markting </option>
+                                <option>Education/Training </option>
+                                <option>Technologies</option>
+                                <option>Art/Design</option>
+                                <option>Healthcare</option>
+                            </select>
+                        </div>
+                        <div class="button">
+                            <a class="btn" href="#"> Search </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End Single Slider -->
+</section>
+
+<section class="apply-process section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="process-item">
+                    <i class="lni lni-user"></i>
+                    <h4>Register Your Account</h4>
+                    <p class="pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="" class="btn btn-light"><i class="lni lni-upload"></i> Register Your
+                        Profile</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="process-item">
+                    <i class="lni lni-book"></i>
+                    <h4>Upload Your Resume</h4>
+                    <p class="pb-3">Don’t just find. Be found. Put your CV in front of great employers</p>
+                    <a href="" class="btn btn-light"><i class="lni lni-upload"></i> Upload Your
+                        Resume</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="process-item">
+                    <i class="lni lni-briefcase"></i>
+                    <h4>Apply for Dream Job</h4>
+                    <p class="pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <a href="" class="btn btn-light"><i class="lni lni-upload"></i> Apply Your
+                        Dream Job</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="find-job section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s"
+                        style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Browse Recent Jobs
+                    </h2>
+                    @* <p class="wow fadeInUp" data-wow-delay=".6s"
+                        style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">There are many
+                        variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form.</p> *@
+                </div>
+            </div>
+        </div>
+        <div class="single-head">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <!-- Single Job -->
+                    <div class="single-job wow fadeInUp" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="job-content">
+                            <h4>
+                                <img src="assets/images/jobs/img1.png" alt="#" style="padding-right: 5px;">
+                                <a href="job-details.html">Software
+                                    Engineer</a>
+                            </h4>
+                            <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
+                                week. All leads are pre-scheduled. </p>
+                            <ul>
+                                <li><i class="lni lni-website"></i><a href="#"> winbrans.com</a></li>
+                                <li><i class="lni lnis-rupee"></i> ₹20k - ₹25k</li>
+                                <li><i class="lni lni-map-marker"></i> New York</li>
+                            </ul>
+                        </div>
+                        <div class="job-button">
+                            <ul>
+                                <li><a href="job-details.html">Apply</a></li>
+                                <li><span>full time</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="single-job wow fadeInUp" data-wow-delay=".3s"
+                        style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <div class="job-content">
+                            <h4>
+                                <img src="assets/images/jobs/img1.png" alt="#" style="padding-right: 5px;">
+                                <a href="job-details.html">Software
+                                    Engineer</a>
+                            </h4>
+                            <p>We are looking for Enrollment Advisors who are looking to take 30-35 appointments per
+                                week. All leads are pre-scheduled. </p>
+                            <ul>
+                                <li><i class="lni lni-website"></i><a href="#"> winbrans.com</a></li>
+                                <li><i class="lni lnis-rupee"></i> ₹20k - ₹25k</li>
+                                <li><i class="lni lni-map-marker"></i> New York</li>
+                            </ul>
+                        </div>
+                        <div class="job-button">
+                            <ul>
+                                <li><a href="job-details.html">Apply</a></li>
+                                <li><span>full time</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination -->
             <div class="row">
                 <div class="col-12">
-                    <div class="page-title-box">
-                        <div class="page-title-right">
-                            <form class="d-flex">
-                                <div class="input-group">
-                                    <input type="text" class="form-control form-control-light" id="dash-daterange">
-                                    <span class="input-group-text bg-primary border-primary text-white">
-                                        <i class="mdi mdi-calendar-range font-13"></i>
-                                    </span>
-                                </div>
-                                <a href="javascript: void(0);" class="btn btn-primary ms-2">
-                                    <i class="mdi mdi-autorenew"></i>
-                                </a>
-                                <a href="javascript: void(0);" class="btn btn-primary ms-1">
-                                    <i class="mdi mdi-filter-variant"></i>
-                                </a>
-                            </form>
-                        </div>
-                        <h4 class="page-title">Dashboard</h4>
+                    <div class="pagination center wow fadeInUp" data-wow-delay=".3s"
+                        style="visibility: hidden; animation-delay: 0.3s; animation-name: none;">
+                        <ul class="pagination-list">
+                            <li><a href="#"><i class="lni lni-arrow-left"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#"><i class="lni lni-arrow-right"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-xl-7 col-lg-6">
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card widget-flat">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <i class="mdi mdi-account-multiple widget-icon"></i>
-                                    </div>
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Job Seekers">Job Seekers
-                                    </h5>
-                                    <h3 class="mt-3 mb-3">10</h3>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-
-                        <div class="col-sm-6">
-                            <div class="card widget-flat">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <i class="mdi mdi-cart-plus widget-icon"></i>
-                                    </div>
-                                    <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Orders</h5>
-                                    <h3 class="mt-3 mb-3">5,543</h3>
-                                    <p class="mb-0 text-muted">
-                                        <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i>
-                                            1.08%</span>
-                                        <span class="text-nowrap">Since last month</span>
-                                    </p>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-                    </div> <!-- end row -->
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card widget-flat">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <i class="mdi mdi-currency-usd widget-icon"></i>
-                                    </div>
-                                    <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Revenue</h5>
-                                    <h3 class="mt-3 mb-3">$6,254</h3>
-                                    <p class="mb-0 text-muted">
-                                        <span class="text-danger me-2"><i class="mdi mdi-arrow-down-bold"></i>
-                                            7.00%</span>
-                                        <span class="text-nowrap">Since last month</span>
-                                    </p>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-
-                        <div class="col-sm-6">
-                            <div class="card widget-flat">
-                                <div class="card-body">
-                                    <div class="float-end">
-                                        <i class="mdi mdi-pulse widget-icon"></i>
-                                    </div>
-                                    <h5 class="text-muted fw-normal mt-0" title="Growth">Growth</h5>
-                                    <h3 class="mt-3 mb-3">+ 30.56%</h3>
-                                    <p class="mb-0 text-muted">
-                                        <span class="text-success me-2"><i class="mdi mdi-arrow-up-bold"></i>
-                                            4.87%</span>
-                                        <span class="text-nowrap">Since last month</span>
-                                    </p>
-                                </div> <!-- end card-body-->
-                            </div> <!-- end card-->
-                        </div> <!-- end col-->
-                    </div> <!-- end row -->
-
-                </div> <!-- end col -->
-
-                <div class="col-xl-5 col-lg-6">
-                    <div class="card card-h-100">
-                        <div class="card-body pt-0">
-                            <h2>User Types (Donut Chart)</h2>
-                            <canvas id="userDonutChart" width="200" height="200"></canvas>
-
-                            <h2>Jobs by Category (Bar Chart)</h2>
-                            <canvas id="categoryChart" width="200" height="200"></canvas>
-
-                        </div> <!-- end card-body-->
-                    </div> <!-- end card-->
-
-                </div> <!-- end col -->
-            </div>
-            <!-- end row -->
-
+            <!--/ End Pagination -->
         </div>
-        <!-- container -->
-
     </div>
-    <!-- content -->
-
-    <!-- Footer Start -->
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <script>document.write(new Date().getFullYear())</script>2025 © Hyper - Coderthemes.com
-                </div>
-                <div class="col-md-6">
-                    <div class="text-md-end footer-links d-none d-md-block">
-                        <a href="javascript: void(0);">About</a>
-                        <a href="javascript: void(0);">Support</a>
-                        <a href="javascript: void(0);">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end Footer -->
-
-</div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const userData = @Html.Raw(ViewBag.UserSummary);
-        const categoryData = @Html.Raw(ViewBag.CategorySummary);
-
-        // Donut Chart for User Types
-        const userDonutChart = new Chart(document.getElementById('userDonutChart'), {
-            type: 'doughnut',
-            data: {
-                labels: userData.map(u => u.user_type),
-                datasets: [{
-                    data: userData.map(u => u.Total),
-                    backgroundColor: ['#42A5F5', '#66BB6A'],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    datalabels: {
-                        color: '#fff',
-                        formatter: (value, context) => {
-                            const label = context.chart.data.labels[context.dataIndex];
-                            return `${label}: ${value}`;
-                        }
-                    },
-                    legend: {
-                        position: 'bottom'
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: (context) => {
-                                return `${context.label}: ${context.parsed}`;
-                            }
-                        }
-                    }
-                }
-            },
-            plugins: [ChartDataLabels]
-        });
-
-        // Bar Chart for Job Categories
-        const categoryChart = new Chart(document.getElementById('categoryChart'), {
-            type: 'bar',
-            data: {
-                labels: categoryData.map(c => c.Category),
-                datasets: [{
-                    label: 'Jobs',
-                    data: categoryData.map(c => c.Total),
-                    backgroundColor: '#FFA726'
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    datalabels: {
-                        anchor: 'end',
-                        align: 'top',
-                        color: '#000',
-                        font: {
-                            weight: 'bold'
-                        },
-                        formatter: (value) => value
-                    },
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: (context) => `${context.label}: ${context.parsed.y}`
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            },
-            plugins: [ChartDataLabels]
-        });
-    });
-</script>
+</section>

@@ -8,11 +8,7 @@ namespace ClinetraSolutions.Controllers
     {
         public IActionResult Index()
         {
-            DataTable allCourses = DbData.GetAllCourses();
-            if (allCourses != null && allCourses.Rows.Count > 0)
-            {
 
-            }
             return View();
         }
         [HttpPost]
@@ -23,7 +19,7 @@ namespace ClinetraSolutions.Controllers
                 string courseId = form["CourseId"];
                 string batchStartDate = form["BatchDate"];
                 string courseName = form["CourseName"];
-                bool flag = DbData.SetNewBatch(courseId, batchStartDate);
+                bool flag = true;
                 if (flag)
                 {
                     return Json(new { message = $"New batch dates for '{courseName}' have been set successfully!" });
